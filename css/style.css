@@ -5,3 +5,31 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+
+
+
+nav {
+    background-color: var(--secondary-color);
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+nav > ul {
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav > ul > li {
+    list-style: none;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+}
+
+nav > ul > li > a > img {
+    height: 5vh;
+}
