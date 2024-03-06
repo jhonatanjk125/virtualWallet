@@ -46,6 +46,7 @@ h3 {
 
 .banner-card {
   width: 90%;
+  max-width: 360px;
   height: 18svh;
   box-shadow: 0 0 50px 0 rgba(51, 64, 79, 0.15);
   border-radius: 40px;
@@ -94,7 +95,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  padding-left: 5%;
 }
 
 .main-title {
@@ -103,7 +104,6 @@ main {
 }
 
 .cards {
-  padding-left: 1em;
   height: 100%;
   display: flex;
   justify-content: flex-start;
