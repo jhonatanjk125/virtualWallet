@@ -11,7 +11,7 @@ a {
 }
 
 header {
-  padding-top: 0.5em;
+  background-color: var(--primary-color);
   height: 8svh;
   display: flex;
   justify-content: space-between;
@@ -53,7 +53,7 @@ h3 {
   max-width: 360px;
   height: 18svh;
   box-shadow: 0 0 50px 0 rgba(51, 64, 79, 0.15);
-  border-radius: 40px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
