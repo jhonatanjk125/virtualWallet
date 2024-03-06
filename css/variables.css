@@ -4,6 +4,8 @@
 }
 :root{
     --primary-color: #00DDA3;
+    --light-primary-color: #E1FFEF;
     --secondary-color: #33404F;
-    --icon-color: #fff;
+    --light-secondary-color: #33404f7E;
+    --text-color: #fff;
 }
