@@ -3,6 +3,30 @@
     src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Regular.otf);
 }
 :root{
-    --color-primary: #00DDA3;
-    --color-secundary: #33404F;
+    --primary-color: #00DDA3;
+    --light-primary-color: #E1FFEF;
+    --secondary-color: #33404F;
+    --light-secondary-color: #33404f7E;
+    --text-color: #fff;
 }
+    
+header {
+    background-color: var(--primary-color);
+    height: 8svh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5em;
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    letter-spacing: 0.3em;
+    color: var(--secondary-color);
+  }
+  
+  header img {
+    height: 5svh;
+  }
