@@ -10,27 +10,6 @@ a {
     text-decoration: none;
 }
 
-header {
-  background-color: var(--primary-color);
-  height: 8svh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1.5em;
-}
-
-header .logo {
-  display: flex;
-  align-items: center;
-  column-gap: 1em;
-  letter-spacing: 0.3em;
-  color: var(--secondary-color);
-}
-
-header img {
-  height: 5svh;
-}
-
 h3 {
   text-transform: capitalize;
   color: var(--secondary-color);
@@ -79,7 +58,7 @@ h3 {
 #close-icon {
     position: absolute;
     top: 0.5em;
-    right: -1em;
+    right: -1.9em;
     height: 1.8em;
     z-index: 2;
 }
@@ -97,6 +76,7 @@ div.banner-info > a {
   color: var(--text-color);
   padding: 0.7em 2.5em;
   border-radius: 1.5em;
+  font-size: 12px;
 }
 
 .banner-info p {
