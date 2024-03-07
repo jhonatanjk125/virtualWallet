@@ -5,3 +5,45 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+
+
+.total-balance {
+    padding-top: 8svh;
+    width: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-balance > div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    height: 30svh;
+    width: 30svh;
+    background-color: var(--primary-color);
+}
+
+.total-balance > div > h2 {
+    text-align: center;
+    width: 50%;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.middle-nav {
+    padding: 5svh 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.middle-nav > a {
+    text-decoration: none;
+    padding: 0.7em 1em;
+    background-color: var(--primary-color);
+    border-radius: 2em;
+}
+
