@@ -189,3 +189,123 @@ nav > ul > li > a{
 nav > ul > li > a > img {
     height: 5vh;
 }
+
+.total-balance {
+    width: 100vw;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.total-balance > img {
+    width: 100vw;
+    grid-area: 1 / 1 / span 1 / span 1;
+    object-fit: contain;
+}
+
+
+.total-balance > div {
+    grid-area: 1 / 1 / span 1 / span 1;
+    margin: 10svh auto 0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    height: 25svh;
+    width: 25svh;
+    background-color: var(--primary-color);
+}
+
+.total-balance > div > h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    width: 50%;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.middle-nav {
+    padding: 3svh 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.middle-nav > a {
+    text-decoration: none;
+    padding: 0.7em 1em;
+    background-color: var(--primary-color);
+    border-radius: 2em;
+}
+
+.middle-nav > a:first-child {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.middle-nav > a:nth-child(2) {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.middle-nav > a:last-child {
+    background-color: var(--text-color);
+    color: var(--tertiary-color);
+    border: 2px solid var(--tertiary-color);
+}
+
+.balance-chart{
+    width: 80vw;
+    margin: auto;
+
+}
+
+.balance-chart img {
+    width: 100%;
+}
+
+.balance-chart > article {
+    width: 100%;
+    letter-spacing: 4.4vw;
+    text-align: center;
+    white-space: nowrap;
+    padding: 4svh 0;
+}
+
+.lower-banner {
+    display:grid;
+    padding: 4vw;
+    width: 100vw;
+    grid-template-columns: repeat(2,fr) repeat(3,1fr) 0.5fr;
+    grid-template-rows: 0.5fr 2fr;
+    column-gap: 1.5em;
+    background-color: var(--light-primary-color);
+}
+
+#card-icon {
+    grid-area: 2 / 1 / span 1 /span 2;
+    width: 25vw;
+}
+
+#close-icon {
+    width: 8vw;
+    grid-area: 1 / 6 / span 1 / span 1;
+}
+
+.lower-banner > article {
+    grid-area: 2 / 3 / span 1 / span 4;
+}
+
+.lower-banner > article > h3 {
+    color: var(--secondary-color);
+}
+
+.lower-banner > article > p {
+    padding-top: 0.7em;
+    font-size: 0.8rem;
+    color: var(--tertiary-color);
+    font-weight: 500;
+}
