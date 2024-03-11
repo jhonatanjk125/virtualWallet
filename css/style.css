@@ -80,3 +80,50 @@ h3 {
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 5em;
 }
+
+.balance-bar {
+    height: 5px;
+    background-color: var(--text-color);
+    width: 35vw;
+    border-radius: 2px;
+}
+
+#progress-bar-1 {
+    height: 5px;
+    border-radius: 2px;
+    background-color: var(--primary-color);
+    width: 80%;
+}
+
+#progress-bar-2 {
+    height: 5px;
+    border-radius: 2px;
+    background-color: var(--tertiary-color);
+    width: 30%;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+nav > ul {
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav > ul > li {
+    list-style: none;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+}
+
+nav > ul > li > a > img {
+    height: 5vh;
+}
