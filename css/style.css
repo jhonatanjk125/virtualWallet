@@ -1,22 +1,24 @@
 @import url(variables.css);
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "SF-Pro-Text-Regular";
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Mono", sans-serif;
+  color: var(--text-color);
+}
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    max-height: 92svh;
+  max-height: 92svh;
+  background-color: var(--background-color);
 }
 
 header {
   background-color: var(--primary-color);
-  height: 8svh;
+  height: 5svh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,8 +34,9 @@ header .logo {
 }
 
 header .logo h1 {
-    font-size: 1.5rem;
-    font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--secondary-color);
 }
 
 header img {
@@ -42,7 +45,7 @@ header img {
 
 h3 {
   text-transform: capitalize;
-  color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .banner {
@@ -86,11 +89,11 @@ h3 {
 }
 
 #close-icon {
-    position: absolute;
-    top: 0.5em;
-    right: -1.9em;
-    height: 1.8em;
-    z-index: 2;
+  position: absolute;
+  top: 0.5em;
+  right: -1.9em;
+  height: 1.8em;
+  z-index: 2;
 }
 
 .banner-info {
@@ -104,17 +107,20 @@ h3 {
 div.banner-info > a {
   background-color: var(--primary-color);
   font-weight: 600;
-  color: var(--text-color);
-  padding: 0.7em 2.5em;
+  color: var(--secondary-color);
+  padding: 0.7em 2em;
+  text-align: center;
   border-radius: 1.5em;
   font-size: 12px;
 }
 
-.banner-info p {
-  color: var(--light-secondary-color);
+div.banner-info > h3 {
+  font-size: 1rem;
 }
 
-
+.banner-info p {
+  color: var(--text-color);
+}
 
 main {
   height: 55svh;
@@ -155,12 +161,12 @@ main {
 }
 
 .profile-banner {
-    padding: 2em;
-    color: var(--text-color);
-    display:grid;
-    grid-template-columns: repeat(2, minmax(50px,1fr));
-    grid-template-rows: repeat(6,1fr);
-    grid-template-areas:
+  padding: 2em;
+  color: var(--text-color);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
     "greeting greeting greeting"
     "message message message"
     "balance balance balance";
@@ -175,18 +181,19 @@ main {
   grid-area: 2 / 1 / span 1 / span 3;
   align-self: center;
   justify-self: center;
+  color: var(--text-color);
 }
 
 #profile {
-    background-color: var(--secondary-color);
-    background-image: url(../storage/img/background-pattern.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: var(--secondary-color);
+  background-image: url(../storage/img/background-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .profile-banner > p {
-    grid-area: message;
-    padding-bottom: 0;
+  grid-area: message;
+  padding-bottom: 0;
 }
 
 .card .logo {
@@ -196,289 +203,294 @@ main {
 }
 
 .profile-banner > section > article {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 2em;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 2em;
 }
 
-
 nav {
-    background-color: var(--secondary-color);
-    width: 100vw;
-    position: fixed;
-    bottom: 0;
+  background-color: var(--secondary-color);
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
 }
 
 nav > ul {
-    display: flex;
-    height: 8vh;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  height: 8vh;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 nav > ul > li {
-    list-style: none;
+  list-style: none;
 }
 
-nav > ul > li > a{
-    text-decoration: none;
+nav > ul > li > a {
+  text-decoration: none;
 }
 
 nav > ul > li > a > img {
-    height: 5vh;
+  height: 5vh;
 }
 
 .total-balance {
-    width: 100vw;
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .total-balance > img {
-    width: 100vw;
-    grid-area: 1 / 1 / span 1 / span 1;
-    object-fit: contain;
+  width: 100vw;
+  grid-area: 1 / 1 / span 1 / span 1;
+  object-fit: contain;
 }
 
-
 .total-balance > div {
-    grid-area: 1 / 1 / span 1 / span 1;
-    margin: 10svh auto 0 auto;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 50%;
-    height: 25svh;
-    width: 25svh;
-    background-color: var(--primary-color);
+  grid-area: 1 / 1 / span 1 / span 1;
+  margin: 10svh auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  height: 25svh;
+  width: 25svh;
+  background-color: var(--primary-color);
 }
 
 .total-balance > div > h2 {
-    text-align: center;
-    font-size: 1.2rem;
-    width: 50%;
-    color: var(--text-color);
-    font-weight: 700;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 50%;
+  color: var(--secondary-color);
+  font-weight: 700;
 }
 
 .middle-nav {
-    padding: 3svh 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  padding: 3svh 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .middle-nav > a {
-    text-decoration: none;
-    padding: 0.7em 1em;
-    background-color: var(--primary-color);
-    border-radius: 2em;
+  text-decoration: none;
+  padding: 0.7em 1em;
+  background-color: var(--primary-color);
+  border-radius: 2em;
 }
 
 .middle-nav > a:first-child {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    border: 2px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: 2px solid var(--primary-color);
 }
 
 .middle-nav > a:nth-child(2) {
-    background-color: var(--text-color);
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--primary-color);
 }
 
 .middle-nav > a:last-child {
-    background-color: var(--text-color);
-    color: var(--tertiary-color);
-    border: 2px solid var(--tertiary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 2px solid var(--tertiary-color);
 }
 
-.balance-chart{
-    width: 70vw;
-    margin: auto;
-
+.balance-chart {
+  width: 70vw;
+  margin: auto;
 }
 
 .balance-chart img {
-    width: 100%;
+  width: 100%;
 }
 
 .balance-chart > article {
-    width: 100%;
-    letter-spacing: 3.2vw;
-    text-align: center;
-    white-space: nowrap;
-    padding: 3.1svh 0;
+  width: 100%;
+  letter-spacing: 3.2vw;
+  text-align: center;
+  white-space: nowrap;
+  padding: 3.1svh 0;
 }
 
 .lower-banner {
-    display:grid;
-    padding: 0;
-    width: 100vw;
-    grid-template-columns: repeat(2,fr) repeat(3,1fr) 0.5fr;
-    grid-template-rows: 0.5fr 2fr;
-    column-gap: 1.5em;
-    background-color: var(--light-primary-color);
-    padding-bottom: 0.5em;
+  display: grid;
+  padding: 0;
+  width: 100vw;
+  grid-template-columns: repeat(2, fr) repeat(3, 1fr) 0.5fr;
+  grid-template-rows: 0.5fr 2fr;
+  column-gap: 1.5em;
+  background-color: var(--light-primary-color);
+  padding-bottom: 1.2em;
 }
 
 #card-icon {
-    grid-area: 2 / 1 / span 1 /span 2;
-    width: 25vw;
+  grid-area: 2 / 1 / span 1 / span 2;
+  width: 25vw;
+  padding-left: 1em;
+}
+
+#greeting {
+  padding-bottom: 0;
 }
 
 #close-icon2 {
-    width: 6vw;
-    grid-area: 1 / 6 / span 1 / span 1;
+  width: 8vw;
+  grid-area: 1 / 6 / span 1 / span 1;
+  padding: 0.2em;
 }
 
 .lower-banner > article {
-    grid-area: 2 / 3 / span 1 / span 4;
+  grid-area: 2 / 3 / span 1 / span 4;
 }
 
 .lower-banner > article > h3 {
-    color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .lower-banner > article > p {
-    padding-top: 0.7em;
-    font-size: 0.8rem;
-    color: var(--tertiary-color);
-    font-weight: 500;
+  padding-top: 0.7em;
+  font-size: 0.8rem;
+  color: var(--tertiary-color);
+  font-weight: 500;
 }
 
 .main-content {
-    background-color: white;
-    position: absolute;
-    bottom: 25svh;
-    padding: 5svh 0 0 0;
-    border-radius: 2rem 2rem 0 0;
-    height: 40svh;
-    width: 100vw;
+  background-color: var(--background-color);
+  position: absolute;
+  bottom: 25svh;
+  padding: 5svh 0 0 0;
+  border-radius: 2rem 2rem 0 0;
+  height: 40svh;
+  width: 100vw;
+  color: var(--text-color);
 }
 
 .main-content h3 {
-    background-color: transparent;
-    color: var(--secondary-color);
-    padding: 0 1vh 0 1vh;
+  background-color: transparent;
+  color: var(--text-color);
+  padding: 0 1vh 0 1vh;
 }
 
 .activities {
-    display:flex;
-    justify-content: space-around;
-    padding: 0.4em 0 1em 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.4em 0 1em 0;
 }
 
 .activities article {
-    background-color: var(--text-color);
-    border-radius: 1em;
-    padding: 2em 1.5em;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--secondary-color);
-    font-weight: 600;
-    box-shadow: 0 0 50px 0 rgba(51, 64, 79, 0.15);
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #00ffff;
+  border-radius: 1em;
+  padding: 2em 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  box-shadow: 0 0 50px 0 rgba(51, 64, 79, 0.15);
 }
 
 .activities article img {
-    width: 60px;
+  width: 60px;
 }
 
 .transactions {
-    display:flex;
-    flex-direction: column;
-    overflow-y: scroll;
-    height: 23svh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 23svh;
 }
 
 .transactions > article {
-    display:grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 2;
-    padding: 1em 1em;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 2;
+  padding: 1em 1em;
 }
 
 .transactions > article > img {
-    grid-area: 1 / 1 / span 2 / span 1;
-    height: 40px;
-    justify-self: center;
-    align-self: center;
+  grid-area: 1 / 1 / span 2 / span 1;
+  height: 40px;
+  justify-self: center;
+  align-self: center;
 }
 
 .transactions > article > p {
-    grid-area: 1 / 2 / span 1 / span 6;
+  grid-area: 1 / 2 / span 1 / span 6;
 }
 
 .transactions > article > small {
-    grid-area: 2 / 2 / span 1 / span 6;
+  grid-area: 2 / 2 / span 1 / span 6;
 }
 
 #profile {
-    width:100vw;
-    padding: 0;
+  width: 100vw;
+  padding: 0;
 }
 
 .profile-banner {
-    padding: 2em;
-    color: var(--text-color);
-    display:grid;
-    grid-template-columns: repeat(2, minmax(50px,1fr));
-    grid-template-rows: repeat(6,1fr);
-    grid-template-areas:
+  padding: 1em;
+  color: var(--text-color);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
     "greeting greeting greeting"
     "message message message"
     "balance balance balance";
 }
 
 .profile-banner > h1 {
-    font-size: 32px;
-    font-weight: 900;
-    grid-area: greeting;
+  font-size: 28px;
+  font-weight: 900;
+  grid-area: greeting;
 }
 
 .profile-banner > p {
-    grid-area: message;
-    padding-bottom: 0;
+  grid-area: message;
+  display:block;
+  padding-bottom: 0 !important;
 }
 
 .profile-banner > section {
-    grid-area: balance;
-    display:flex;
+  grid-area: balance;
+  display: flex;
 }
 
 .profile-banner > section > article {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 2em;
+  padding-top: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 2em;
 }
 
 .profile-banner > article > h3 {
-    color: var(--text-color);
-    padding: 0.3em 0;
+  color: var(--text-color);
+  padding: 0.3em 0;
 }
 
 .balance-bar {
-    height: 5px;
-    background-color: var(--text-color);
-    width: 35vw;
-    border-radius: 2px;
+  height: 5px;
+  background-color: var(--text-color);
+  width: 35vw;
+  border-radius: 2px;
 }
 
 #progress-bar-1 {
-    height: 5px;
-    border-radius: 2px;
-    background-color: var(--primary-color);
-    width: 80%;
+  height: 5px;
+  border-radius: 2px;
+  background-color: var(--primary-color);
+  width: 80%;
 }
 
 #progress-bar-2 {
-    height: 5px;
-    border-radius: 2px;
-    background-color: var(--tertiary-color);
-    width: 30%;
+  height: 5px;
+  border-radius: 2px;
+  background-color: var(--tertiary-color);
+  width: 30%;
 }
-

@@ -1,13 +1,11 @@
-@font-face {
-    font-family: "SF-Pro-Text-Regular";
-    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Regular.otf);
-}
-:root{
-    --primary-color: #00DDA3;
-    --light-primary-color: #E1FFEF;
-    --secondary-color: #33404F;
-    --light-secondary-color: #33404f7E;
-    --tertiary-color: #B5C5C3;
-    --text-color: #fff;
-    --icon-color: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+  --primary-color: #00ffff;
+  --light-primary-color: #00ffff27;
+  --secondary-color: #2f2f2f;
+  --light-secondary-color: #2f2f2f7e;
+  --tertiary-color: #b5c5c3;
+  --text-color: #fff;
+  --icon-color: #fff;
+  --background-color: #212121;
 }
